@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
+        <input type="hidden" name="access_key" value="c2fa14a2-3aef-4dc3-961d-45c26c6c3eb7">
+
+        <div>
+            <h1>Registation Form </h1>
+
+        </div>
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your Name">
+            <p id="nerror"></p>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Enter your Email">
+            <p id="eerror"></p>
+        </div>
+        <div class="input-group">
+            <label for="Phone">PhoneNo</label>
+            <input id="phone" type="tel" placeholder="Enter your PhoneNo">
+            <p id="perror"></p>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter your Password">
+            <p id="passerror"></p>
+        </div>
+        <div class="input-group">
+            <label for="confirmpassword">Confirm Password</label>
+            <input id="confirmpassword" type="text" placeholder="Enter your confirm Password">
+            <p id="cpasserror"></p>
+        </div>
+        <div class="input-field">
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+            <p id="generror"></p>
+        </div>
+        
+        <div class="input-group" >
+            <label for="country">country</label>
+            <select name="country" id="country">
+                <option value="">select your country</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">England</option>
+            </select>
+            <p id="counerror"></p>
+        </div>
+        <div class="input-field">
+            <label for="hobby">Hobby</label>
+            <input type="checkbox" name="hobby">Playing
+            <input type="checkbox" name="hobby">Travelling
+            <input type="checkbox" name="hobby">Singing
+            <p id="herror"></p>
+        </div>
+        <div class="input-group">
+            <label for="address">Address</label>
+            <textarea name="address" id="address"></textarea>
+            <p id="adderror"></p>
+        </div>
+        <div class="btn">
+            <button id="register">Register</button>
+        </div>
+
+    </form>
+
+
+    <script src="action.js"></script>
+</body>
+
+</html>
